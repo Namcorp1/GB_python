@@ -7,17 +7,17 @@
 # - 1 -> нет
 
 # первоначальное решение
-check = True
-while check:
-    num = int(input("Введите число: "))
-    if 1 <= num <= 7:
-        check = False
-    else:
-        print("Не существует такого дня недели!")
-if num == 6 or num == 7:
-    print(f"{num} -> да")
-else:
-    print(f"{num} -> нет")
+# check = True
+# while check:
+#     num = int(input("Введите число: "))
+#     if 1 <= num <= 7:
+#         check = False
+#     else:
+#         print("Не существует такого дня недели!")
+# if num == 6 or num == 7:
+#     print(f"{num} -> да")
+# else:
+#     print(f"{num} -> нет")
 
 # оптимизированное решение
 def check_weekend(num_weekday):
