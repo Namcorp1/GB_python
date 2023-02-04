@@ -42,7 +42,7 @@ def calc_pace(message,seconds): #передача 2 аргументов воз�
         bot.send_message(message.chat.id,f'Необходимый темп {pace_min}:0{pace_sec} мин/км.')
     else:
         bot.send_message(message.chat.id, f'Необходимый темп {pace_min}:{pace_sec} мин/км.')
-@bot.message_handler(func= lambda x: x.text == 'Конвертер скорости')
+@bot.message_handler(func= lambda x: x.text == 'Конвертер скорости и темпа')
 def choice_converter(message):
     kb = types.ReplyKeyboardMarkup(resize_keyboard=True,one_time_keyboard=True)
     btn1 = types.KeyboardButton(text='км/ч -> мин/км')
