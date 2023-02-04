@@ -18,7 +18,7 @@ def help(message):
 @bot.message_handler(commands=['run_calc'])
 def change_command(message):
     kb = types.ReplyKeyboardMarkup(resize_keyboard=True,one_time_keyboard=True)
-    btn1 = types.KeyboardButton(text='Конвертер скорости')
+    btn1 = types.KeyboardButton(text='Конвертер скорости и темпа')
     btn2 = types.KeyboardButton(text='Калькулятор темпа')
     kb.add(btn1,btn2)
     bot.send_message(message.chat.id, 'Добро пожаловать в <b>беговой калькулятор</b>!\nВыбери, что хочешь сделать:',parse_mode = 'HTML',reply_markup=kb)
